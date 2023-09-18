@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Tebak Angka</title>
+    <link rel="stylesheet" href="index.css"> <!-- Tambahkan file CSS jika ada -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Angka Berapakah Aku?</h1>
+        <p id="nilaimax">Masukkan nilai maksimal:</p>
+        <input type="number" id="maxInput">
+        <button onclick="mulaiPermainan()">Mulai</button>
+        <p id="tebakanPertama"></p>
+        <div id="tebakanSelanjutnya" style="display: none;">
+            <input type="number" id="tebakInput">
+            <button onclick="cekTebakan()">Tebak</button>
+        </div>
+        <p id="hasilTebakan"></p>
+        <audio id="cheerAudio">
+            <source src="short-crowd-cheer-6713.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script src="index.js"></script>
+    <!-- Ubah nama file sesuai dengan nama file JavaScript Anda -->
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    text-align: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+input,
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.firework {
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    /* Warna ledakan */
+    border-radius: 50%;
+    position: absolute;
+    animation: explode 1s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
